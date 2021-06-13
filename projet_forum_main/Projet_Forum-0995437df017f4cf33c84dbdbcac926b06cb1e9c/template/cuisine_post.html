@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/cuisine.css">
+    <script src="https://kit.fontawesome.com/cc622e22f4.js" crossorigin="anonymous"></script>
+    <title>PagePost</title>
+</head>
+<body class="body" id="body">
+    <div class="navbar">
+        <a href="./Accueil.html">
+            <img class="navlogo" src="https://www.ynov-informatique.com/app/uploads/2020/04/logo_ynov_campus_rvb_blanc-300x150.png">
+        </a>
+        <input class="recherche" type="text" name="search">
+        <a href="./pagepost.html">Forum</a>
+    </div>
+    <div class="colonecontainer">
+        <div class="containerfiltre">
+            <button type="button" class="btn btn-class1"><a href="./informatique_post.html">Informatique</a></button>
+            <button type="button" class="btn btn-class2"><a href="./jeuxvideo_post.html">Jeux Vidéo</a></button>
+            <button type="button" class="btn btn-class3"><a href="./art_post.html">Art</a></button>
+            <button type="button" class="btn btn-class4"><a href="./sport_post.html">Sport</a></button>
+            <button type="button" class="btn btn-class5"><a href="./hightech_post.html">High Tech</a></button>
+            <button type="button" class="btn btn-class6"><a href="./cuisine_post.html">Cuisine</a></button>
+        </div>
+        <div class="postcontainer">
+        {{range .allposts}}
+        <div class="container">
+            <div class="title">
+                {{index . 1}}
+            </div>
+            <div class="bloc active">
+                <div class="bloc-haut"> 
+                    {{index . 2}}
+                </div>
+            </div>
+            <div class="flootercontainer">
+            <div class="categories">
+                <p class="btncategorie btn-filtre">
+                    {{index . 8}}
+                </p>
+            </div>
+            <div class="vote_btns">
+                <button class="vote_btn vote_like"><i class="fa fa-thumbs-up"></i> 0</button>
+                <button class="vote_btn vote_dislike"><i class="fa fa-thumbs-down"></i> 0</button>
+            </div>
+            <div>
+                <form action="./reponse_post.html" method="GET">
+                    <button class="btncontainer btn-comment">
+                        <input type="hidden" name="id" value="{{index . 0}}" />
+                        <p>Comment</p>
+                    </button>
+                </form>
+            </div>
+            </div>
+        </div>
+        {{end}}
+        </div>
+    </div>
+</body>
+</html>

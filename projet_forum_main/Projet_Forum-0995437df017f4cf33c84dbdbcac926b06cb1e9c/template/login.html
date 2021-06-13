@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width-device-width, initial-scale-1">
+        <link rel="stylesheet" type="text/css" href="../assets/css/login.css">
+        <title>login</title>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class="navbar">
+            <img class="navlogo" src="https://www.ynov-informatique.com/app/uploads/2020/04/logo_ynov_campus_rvb_blanc-300x150.png">
+            <input class="recherche" type="text" name="search">
+            <a href="login.html">Login</a>
+        </div>
+        <form id="login" method="POST" action="login.html">
+            <!-- Container -->
+            <h1>Login</h1>
+            <div class="container">
+                <div class="NDU">
+                    <label for="Mail-input">E-mail</label>
+                    <input id="Mail-input" class="Mail" name="Mail" type="text" value="" placeholder="E-mail" />
+                </div>
+                <div class="MDP">
+                    <label for="MDP-input">Password</label>
+                    <input id="MDP-input" class="MDP" name="MDP" type="password" value="" placeholder="Password" />
+                </div>
+                <div class="logincont">
+                    <input class="submit" type="submit" value="Start" id="log" />
+                </div>
+            </div>
+        </form>
+        <a href="./creation_compte.html" class="registerbtn">Create Account</a>
+    </body>
+    <footer>
+        <img class="Ynovlogo" src="https://www.ynov-informatique.com/app/uploads/2020/04/logo_ynov_campus_rvb_blanc-300x150.png">
+    </footer>
+</html>

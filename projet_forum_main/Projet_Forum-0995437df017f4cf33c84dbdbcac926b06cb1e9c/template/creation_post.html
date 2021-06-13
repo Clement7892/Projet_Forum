@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width-device-width, initial-scale-1">
+        <link rel="stylesheet" href="../assets/css/creation_post.css"/>
+        <title>Create Post</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <img class="navlogo" src="https://www.ynov-informatique.com/app/uploads/2020/04/logo_ynov_campus_rvb_blanc-300x150.png">
+            <input class="recherche" type="text" name="search">
+            <a href="./pagepost.html">Forum</a>
+        </div>
+        <form name="info" method="POST">
+            <!-- Container -->
+            <div class="container">
+                <h1>Nouveau Sujet</h1>
+                <input type="text" name="Titre" placeholder="Nom du sujet">
+                <!-- Checkbox -->
+                <div class="chckcont">
+                    <div class="chck1">
+                        <input type="checkbox"  value="Informatique" id="informatique" name="Informatique">
+                        <label for="informatique">Informatique</label>
+                    </div>
+                    <div class="chck2">
+                        <input type="checkbox" value="Jeux vidéo" id="jeuxvideo" name="Jv">
+                        <label for="jeuxvideo">JeuxVidéo</label>
+                    </div>
+                    <div class="chck3">
+                        <input type="checkbox" value="Art" id="art" name="Art">
+                        <label for="art">Art</label>
+                    </div>
+                    <div class="chck4">
+                        <input type="checkbox" value="Sport" id="sport" name="Sport">
+                        <label for="sport">Sport</label>
+                    </div>
+                    <div class="chck5">
+                        <input type="checkbox" value="High Tech" id="hightech" name="Ht">
+                        <label for="hightech">HighTech</label>
+                    </div>
+                    <div class="chck6">
+                        <input type="checkbox" value="Cuisine" id="cuisine" name="Cuisine">
+                        <label for="cuisine">Cuisine</label>
+                    </div>
+                </div>
+                <textarea name="Message" placeholder="Ajouter une description"></textarea>
+                <button type="submit">Publier</button>
+            </div>
+        </form>
+    </body>
+    <footer>
+        <img class="Ynovlogo" src="https://www.ynov-informatique.com/app/uploads/2020/04/logo_ynov_campus_rvb_blanc-300x150.png">
+    </footer>
+</html>

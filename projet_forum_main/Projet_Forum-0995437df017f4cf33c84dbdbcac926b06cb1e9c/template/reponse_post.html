@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/reponse_post.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <img class="navlogo" src="https://www.ynov-informatique.com/app/uploads/2020/04/logo_ynov_campus_rvb_blanc-300x150.png">
+        <img class="searchlogo" src="../img/search-icon.png">
+        <input class="recherche" type="text" name="search">
+        <a href="./pagepost.html">Forum</a>
+    </div>
+    
+    <div class="maincontainer">
+        <div class="rangepost">
+            {{range  .allposts}}
+        </div>
+
+        <div class="container">
+            {{index . 1}}
+            <div class="bloc active">
+                <div class="bloc-haut"> 
+                    {{index . 2}}
+                </div>
+            </div>
+        </div>
+
+        <div class="containercomment">
+            <div class="divbloccomment">
+                <form name="info" method="POST">
+                    <div class="textareacomment">
+                        <textarea class="bloccomment active" name="Commentaire" placeholder="Ajouter un commentaire" value=""></textarea>
+                    </div>
+                    <div>
+                        <button class="btnpublier" type="submit">Publier</button>
+                    </div>
+                    <input type="hidden" name="ids" value="{{index . 0}}">
+                </form>
+                <div class="line"></div>
+            {{end}}
+            {{range .comments}}
+                <div class="publiccomment">
+                    {{.}}
+                </div>
+                {{end}}
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

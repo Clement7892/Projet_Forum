@@ -1,0 +1,274 @@
+body {
+    background-image: url("https://i.pinimg.com/originals/b8/4f/41/b84f4195a6d33c93d01111287c0c7b7e.jpg");
+    text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    text-align: right;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    padding: 25px;
+}
+
+.navlogo {
+    top: 15px;
+    left: 20px;
+    width: 90px;
+    position: absolute;
+}
+
+.navbar a {
+    margin-right: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.recherche {
+    position: absolute;
+    right: 15em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    padding: 5px 10px;
+    outline: 0;
+}
+
+.recherche:focus {
+    box-shadow:none;
+    border-bottom: 2px solid white;
+}
+
+.colonecontainer {
+    /* display: flex; */
+}
+
+.container {
+    width: 1000px;
+    height: 200px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-right: 15%;
+    float: right;
+}
+
+.bloc {
+    height: 70px;
+    margin: 5px;
+    border-radius: 25px;
+    background-image: repeating-linear-gradient(135deg, rgba(189,189,189,0.1) 0px, rgba(189,189,189,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+    flex-grow: 1;
+    transition: flex-grow 0.4s ease-out;
+    position: relative;
+    overflow: hidden;
+}
+.active {
+    flex-grow: 10000;
+}
+.bloc * {
+    pointer-events: none;
+}
+.bloc-haut {
+    height: 70px;
+    /* background: #000; */
+    display: flex;
+    align-items: center;
+    color: black;
+    margin-left: 2%;
+}
+
+.title {
+    font-size: 20px;
+    color: white;
+}
+
+.categories {
+    font-size: 20px;
+    margin-left: 2%;
+    float: left;
+
+}
+
+.containerfiltre {
+    position: fixed;
+    margin-top: 10%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(99, 113, 236);
+    padding: 40px;
+    border: white;
+    border-radius: 8%;
+}
+
+.btn {
+    margin: .25rem .125rem;
+    /* display: inline-block; */
+    font-weight: 400;
+    line-height: 1.5;
+    /* text-align: center; */
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-class1 {
+    color: black;
+    background-color: white;
+    border-color: black;
+    margin-bottom: 10%;
+}
+.btn-class1:hover {
+    color: white;
+    background-color: orangered;
+    border-color: orangered;
+    margin-bottom: 10%;
+}
+.btn-class2 {
+    color: black;
+    background-color: white;
+    border-color: black;
+    margin-bottom: 10%;
+}
+.btn-class2:hover{
+    color: white;
+    background-color: blue;
+    border-color: blue;
+    margin-bottom: 10%;
+}
+.btn-class3 {
+    color: black;
+    background-color: white;
+    border-color: black;
+    margin-bottom: 10%;
+}
+.btn-class3:hover {
+    color: white;
+    background-color: cyan;
+    border-color: cyan;
+    margin-bottom: 10%;
+}
+.btn-class4 {
+    color: black;
+    background-color: white;
+    border-color: black;
+    margin-bottom: 10%;
+}
+.btn-class4:hover {
+    color: white;
+    background-color: green;
+    border-color: green;
+    margin-bottom: 10%;
+}
+.btn-class5 {
+    color: black;
+    background-color: white;
+    border-color: black;
+    margin-bottom: 10%;
+}
+.btn-class5:hover {
+    color: white;
+    background-color: orange;
+    border-color: orange;
+    margin-bottom: 10%;
+}
+.btn-class6 {
+    color: black;
+    background-color: white;
+    border-color: black;
+    margin-bottom: 10%;
+}
+.btn-class6:hover {
+    color: white;
+    background-color: pink;
+    border-color: pink;
+    margin-bottom: 10%;
+}
+.btncontainer {
+    margin: .25rem .125rem;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-comment {
+    color: black;
+    background-color: white;
+    border-color: black;
+    float: right;
+    
+}
+.btncategorie {
+    margin: .25rem .125rem;
+    /* display: inline-block; */
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+    /* vertical-align: middle; */
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-filtre {
+    color: white;
+    background-color: gray;
+    border-color: gray;
+}
+.vote_btns {
+    margin-top: 10px;
+    text-align: right;
+}
+.vote_btn {
+    border: none;
+    padding: 0;
+    display: inline-block;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+    background: transparent;
+}
+.vote_like:hover {
+    color: #63b96b;
+}
+.vote_dislike:hover {
+    color: #f2504b;
+}
+.containerfiltre .btn a{
+    text-decoration: none;
+    color: black;
+}

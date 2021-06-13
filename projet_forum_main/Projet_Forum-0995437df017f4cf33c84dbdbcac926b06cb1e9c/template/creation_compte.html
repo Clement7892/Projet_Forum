@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>formulaire d'inscription</title>
+    <link rel="icon" href="https://campusamazonia.fr/wp-content/uploads/2020/10/bb-dash-icon-02-forum-1.png" type="image/gif" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/creation_compte.css" />
+</head>
+
+<body>
+    <div class="navbar">
+      <img class="navlogo" src="https://www.ynov-informatique.com/app/uploads/2020/04/logo_ynov_campus_rvb_blanc-300x150.png">
+      <input class="recherche" type="text" name="search">
+      <a href="login.html">Login</a>
+    </div>
+    <form method="POST" class="Register" name="Register_form" onsubmit="return verif()">
+      <h1>REGISTER</h1>
+      <div class="inputs">
+        <!-- Saisie de Prenom -->
+        <div class="sign-in">
+          <label for="name-input"> First Name : </label>
+          <input id="name-input" class="first_name" name="first_name" type="text" value="" placeholder="First Name"/>
+        </div>
+        <!-- Saisie de Nom -->
+        <div class="sign-in">
+          <label for="last_name-input"> Last Name : </label>
+          <input id="last_name-input" class="last_name" name="last_name" type="text" value="" placeholder="Last Name"/>
+        </div>
+        <!-- Saisie du Mail -->
+        <div class="sign-in">
+          <label for="Mail-input"> E-mail : </label>
+          <input id="Mail-input" class="Mail" name="Mail" type="text" value="" placeholder="E-mail"/>
+        </div>
+        <!-- Saisie du l'addresse -->
+        <div class="sign-in">
+          <label for="User_name"> User name : </label>
+          <input id="User_name" class="User_name" name="User_name" type="text" value="" placeholder="Username"/>
+        </div>
+        <!-- Saisie du Mot de passe -->
+        <div class="sign-in"> 
+          <label for="MDP-input"> Password : </label>
+          <input id="MDP-input" class="MDP" name="MDP" type="password" value="" placeholder="Password"/>
+        </div>
+        <!-- Date de naissance -->
+        <div class="sign-in">
+          <label for="date">Birth date : </label>
+          <input type="date" id="date" name="date_naissance" value="2018-07-22" min="1900-01-01" max="2018-12-31">
+        </div>
+        <!-- Sexe -->
+        <div class="sign-in">
+          <label>Gender : </label>
+          <label style="width: 200px">
+            <input type="radio" name="genre" value="Male" />Male
+          </label>
+          <label style="width: 200px">
+            <input type="radio" name="genre" value="Female" />Female
+          </label>
+          <label style="width: 200px">
+            <input type="radio" name="genre" value="Custom" />Custom
+          </label>
+        </div>
+        <div class="logincont">
+          <input class="submit" type="submit" value="Create Account" />
+        </div>
+      </div>
+    </form>
+    <a href="./login.html" class="registerbtn">Login</a>
+    <script src="../assets/js/main.js"></script>
+  </body>
+  <footer>
+    <img class="Ynovlogo" src="https://www.ynov-informatique.com/app/uploads/2020/04/logo_ynov_campus_rvb_blanc-300x150.png">
+</footer>
+</html>

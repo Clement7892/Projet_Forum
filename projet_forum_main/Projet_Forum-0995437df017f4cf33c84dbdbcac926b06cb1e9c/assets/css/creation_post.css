@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+body {
+    background-color: rgb(32, 41, 62);
+}
+.navbar {
+    text-align: right;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    padding: 25px;
+}
+.navlogo {
+    top: 15px;
+    left: 20px;
+    width: 90px;
+    position: absolute;
+}
+.searchlogo {
+    position: absolute;
+    width: 25px;
+    right: 390px;
+    top: 27px;
+}
+.recherche {
+    right: 15em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 18px;
+    width: 180px;
+    outline: 0;
+    margin-right: 30px;
+}
+.recherche:focus {
+    box-shadow:none;
+    border-bottom: 2px solid white;
+}
+.navbar a {
+    margin-right: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Container */
+
+.container {
+    margin-top: 40px;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: left;
+    display: grid;
+}
+
+.container h1 {
+    margin-top: 10px;
+    grid-row: 1;
+}
+
+.container input {
+    margin-top: 10px;
+    grid-row: 2;
+    background-color: rgb(255, 255, 255);
+    height: 25px;
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+/* Checkbox */
+
+.chckcont {
+    grid-row: 3;
+    display: flex;
+    align-items: start;
+}
+
+.chck1 {
+    height: 50px;
+    width: 128px;
+    margin-right: 15px;
+}
+.chck1 input {
+    left: -415px;
+    position: absolute;
+    width: 0px;
+}
+.chck1 label {
+    top: 15px;
+    padding: 8px 20px;
+    margin-right: 25px;
+    background-color: rgb(83, 83, 83);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.chck1 label:hover {
+    background-color: orangered;
+}
+.chck1 input[type=checkbox]:checked ~ label {
+    background-color: orangered;
+}
+
+.chck2{
+    height: 50px;
+    width: 108px;
+    margin-right: 15px;
+}
+.chck2 input {
+    left: -285px;
+    position: absolute;
+    width: 0px;
+}
+.chck2 label {
+    top: 15px;
+    padding: 8px 20px;
+    background-color: rgb(83, 83, 83);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.chck2 label:hover {
+    background-color: blue;
+}
+.chck2 input[type=checkbox]:checked ~ label {
+    background-color: blue;
+}
+
+.chck3{
+    height: 50px;
+    width: 59px;
+    margin-right: 15px;
+}
+.chck3 input {
+    left: -185px;
+    position: absolute;
+    width: 0px;
+}
+.chck3 label {
+    top: 15px;
+    padding: 8px 20px;
+    background-color: rgb(83, 83, 83);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.chck3 label:hover {
+    background-color: cyan;
+}
+.chck3 input[type=checkbox]:checked ~ label {
+    background-color: cyan;
+}
+
+.chck4{
+    height: 50px;
+    width: 76px;
+    margin-right: 15px;
+}
+.chck4 input {
+    left: -100px;
+    position: absolute;
+    width: 0px;
+}
+.chck4 label {
+    top: 15px;
+    padding: 8px 20px;
+    background-color: rgb(83, 83, 83);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.chck4 label:hover {
+    background-color: green;
+}
+.chck4 input[type=checkbox]:checked ~ label {
+    background-color: green;
+}
+
+.chck5{
+    height: 50px;
+    width: 101px;
+    margin-right: 15px;
+}
+.chck5 input {
+    left: 0px;
+    position: absolute;
+    width: 0px;
+}
+.chck5 label {
+    top: 15px;
+    padding: 8px 20px;
+    background-color: rgb(83, 83, 83);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.chck5 label:hover {
+    background-color: orange;
+}
+.chck5 input[type=checkbox]:checked ~ label {
+    background-color: orange;
+}
+
+.chck6{
+    height: 50px;
+    width: 90px;
+}
+.chck6 input {
+    left: 90px;
+    position: absolute;
+    width: 0px;
+}
+.chck6 label {
+    top: 15px;
+    padding: 8px 20px;
+    background-color: rgb(83, 83, 83);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.chck6 label:hover {
+    background-color: pink;
+}
+.chck6 input[type=checkbox]:checked ~ label {
+    background-color: pink;
+}
+
+/* Container */
+
+.container textarea {
+    grid-row: 4;
+    background-color: rgb(255, 255, 255);
+    min-height: 300px;
+    min-width: 100%;
+    max-height: 300px;
+    max-width: 958px;
+    height: 300px;
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+.container button {
+    grid-row: 5;
+    background-color: rgb(13, 104, 207);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 15px;
+}
+.container button:hover {
+    background-color: rgb(6, 88, 182);
+}
+
+/* Footer */
+
+footer {
+    margin-top: 102px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: rgb(37, 37, 37);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Container */
+.footcont {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* Left container */
+.leftcont {
+    width: 40%;
+}
+.logo {
+    width: 150px;
+}
+footer p {
+    color: #999;
+}
+
+/* Right container */
+.rightcont {
+    position: relative;
+    width: 25%;
+}
+.rightcont  h2 {
+    position: relative;
+    color: rgb(253, 253, 253);
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.rightcont h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 113px;
+    height: 2px;
+    background: white;
+}
+.rightcont ul li {
+    list-style: none;
+}
+.rightcont ul li a {
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.rightcont ul li a:hover {
+    color: #fff;
+}
+footer {
+    background-color: rgb(37, 37, 37);
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+}
+.Ynovlogo {
+    width: 125px;
+    position: absolute;
+    top: 25px;
+    left: 15px;
+}
+.container h1 {
+    color: white;
+}

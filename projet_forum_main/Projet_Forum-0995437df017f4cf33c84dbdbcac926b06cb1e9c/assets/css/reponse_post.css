@@ -1,0 +1,241 @@
+body {
+    background-image: url("https://i.pinimg.com/originals/b8/4f/41/b84f4195a6d33c93d01111287c0c7b7e.jpg");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+
+.navbar {
+    text-align: right;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    padding: 25px;
+}
+.navlogo {
+    top: 15px;
+    left: 20px;
+    width: 90px;
+    position: absolute;
+}
+.searchlogo {
+    position: absolute;
+    width: 25px;
+    right: 390px;
+    top: 27px;
+}
+.recherche {
+    right: 15em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 18px;
+    width: 180px;
+    outline: 0;
+    margin-right: 30px;
+}
+.recherche:focus {
+    box-shadow:none;
+    border-bottom: 2px solid white;
+}
+.navbar a {
+    margin-right: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Container */
+
+.maincontainer {
+    width: 1150px;
+    min-height: 69vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(248, 248, 248);
+}
+
+/* publication */
+
+.rangepost {
+    width: 1040px;
+    margin: auto;
+    padding-top: 15px;
+    margin-bottom: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bloc {
+    height: 70px;
+    flex-grow: 1;
+    transition: flex-grow 0.4s ease-out;
+    position: relative;
+    overflow: hidden;
+}
+.bloc * {
+    pointer-events: none;
+}
+.active {
+    flex-grow: 10000;
+}
+
+.bloc-haut {
+    height: 30px;
+    /* background: #000; */
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+/* Commentaire */
+
+.containercomment{
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textareacomment {
+    text-align: center;
+}
+
+.bloccomment {
+    font-size: large;
+    height: 140px;
+    min-height: 140px;
+    max-height: 280px;
+    width: 1050px;
+    min-width: 1050px;
+    max-width: 1050px;
+    background-image: repeating-linear-gradient(135deg, rgba(189,189,189,0.1) 0px, rgba(189,189,189,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+    flex-grow: 1;
+    transition: flex-grow 0.4s ease-out;
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.btnpublier {
+    color: black;
+    background-color: rgb(192, 189, 189);
+    margin: .25rem .125rem;
+    /* display: inline-block; */
+    font-weight: 400;
+    line-height: 1.5;
+    /* text-align: center; */
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: 5px white;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.line {
+    width: 1050px;
+    height: 2px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 1px;
+    margin-bottom: 20px;
+}
+
+.publiccomment {
+    padding: 10px;
+    margin: 10px;
+    line-height: 1.5rem;
+    flex-grow: 1;
+    transition: flex-grow 0.4s ease-out;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    border: solid 1px rgb(223, 223, 223);
+    border-radius: 10px;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: rgb(37, 37, 37);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Container */
+.footcont {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* Left container */
+.leftcont {
+    width: 40%;
+}
+.logo {
+    width: 150px;
+}
+footer p {
+    color: #999;
+}
+
+/* Right container */
+.rightcont {
+    position: relative;
+    width: 25%;
+}
+.rightcont  h2 {
+    position: relative;
+    color: rgb(253, 253, 253);
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.rightcont h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 113px;
+    height: 2px;
+    background: white;
+}
+.rightcont ul li {
+    list-style: none;
+}
+.rightcont ul li a {
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.rightcont ul li a:hover {
+    color: #fff;
+}
